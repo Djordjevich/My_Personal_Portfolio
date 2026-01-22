@@ -1,0 +1,29 @@
+header{
+    height: 100dvh;
+    position: relative;
+}
+header nav{
+    padding: 2rem;
+    float: right;
+}
+header nav ul{
+    display: flex;
+    gap: 3rem;
+}
+header h1{
+    color: var(--heading-color);
+    font-family: 'Domine', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15rem;
+}
+header #header-img{
+    width: 700px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: grayscale(100%) drop-shadow(8px 8px 10px #555);    
+}
