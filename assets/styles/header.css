@@ -3,12 +3,17 @@ header{
     position: relative;
 }
 header nav{
+    position: fixed;
+    display: block;
+    width: 100%;
+    right: 0;
     padding: 2rem;
-    float: right;
     background-color: var(--bg-color);
+    z-index: 3;
 }
 header nav ul{
     display: flex;
+    float: right;
     gap: 4rem;
     list-style-type: none;
 }
@@ -22,6 +27,7 @@ header nav ul li a:hover{
     color: var(--text-color);
 }
 header .header-content h1{
+    background-color: transparent;
     color: var(--heading-color);
     font-family: 'Domine', sans-serif;
     position: absolute;
@@ -32,7 +38,6 @@ header .header-content h1{
     text-transform: lowercase;
     font-weight: 800;
     letter-spacing: -2rem;
-    user-select: none;
 }
 header .header-content p{
     color: var(--sec-heading-color);
