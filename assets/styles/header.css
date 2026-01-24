@@ -5,25 +5,55 @@ header{
 header nav{
     padding: 2rem;
     float: right;
+    background-color: var(--bg-color);
 }
 header nav ul{
     display: flex;
-    gap: 3rem;
+    gap: 4rem;
+    list-style-type: none;
 }
-header h1{
+header nav ul li a{
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--text-sec-color);
+    transition: all ease-in-out 0.25s;
+}
+header nav ul li a:hover{
+    color: var(--text-color);
+}
+header .header-content h1{
     color: var(--heading-color);
     font-family: 'Domine', sans-serif;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 15rem;
+    font-size: 22rem;
+    text-transform: lowercase;
+    font-weight: 800;
+    letter-spacing: -2rem;
 }
-header #header-img{
-    width: 700px;
+header .header-content p{
+    color: var(--sec-heading-color);
+    display: inline-block;
     position: absolute;
-    bottom: 0;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) skewY(-5deg);
+    background-color: transparent;
+    font-family: 'Arizonia', sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px var(--bg-color);
+}
+header blockquote{
+    color: var(--text-sec-color);
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    bottom: 25%;
     left: 50%;
     transform: translateX(-50%);
-    filter: grayscale(100%) drop-shadow(8px 8px 10px #555);    
+}
+header blockquote span{
+    color: var(--sec-heading-color);
 }

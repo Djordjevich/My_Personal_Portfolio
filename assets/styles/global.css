@@ -1,14 +1,14 @@
 :root{
-    --heading-color: #6c6c6c;
-    --font-color: #1b1b1b;
-    --bg-color: #fff;
+    --heading-color: #fff;
+    --sec-heading-color: #d8090d;
+    --text-sec-color:#aaa;
+    --text-color: #fff;
+    --bg-color: #1a1a1a;
 }
 *{
     margin: auto;
     padding: 0;
     box-sizing: border-box;
     outline: none;
-}
-.max-width{
-    max-width: 1200px;
+    background-color: var(--bg-color);
 }
