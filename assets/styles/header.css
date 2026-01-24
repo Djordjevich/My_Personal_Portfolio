@@ -49,6 +49,7 @@ header .header-content p{
     user-select: none;
 }
 header blockquote{
+    background-color: transparent;
     color: var(--text-sec-color);
     font-family: 'Ubuntu', sans-serif;
     position: absolute;
