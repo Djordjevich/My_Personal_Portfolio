@@ -6,9 +6,11 @@
     --bg-color: #1a1a1a;
 }
 *{
-    margin: auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
+}
+body{
     background-color: var(--bg-color);
 }

@@ -3,8 +3,6 @@ header{
     position: relative;
 }
 header nav{
-    position: fixed;
-    display: block;
     width: 100%;
     right: 0;
     padding: 2rem;
