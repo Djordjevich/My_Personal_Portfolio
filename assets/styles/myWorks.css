@@ -1,0 +1,33 @@
+.myWorks{
+    background-color: #333;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 2rem;
+}
+.myWorks h2{
+    color: var(--heading-color);
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+.myWorks h2 span{
+    color: var(--sec-heading-color);
+    font-family: 'Arizonia', sans-serif;
+}
+.myWorks h3{
+    color: var(--text-color);
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+.myWorks #websiteImg{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    position: relative;
+}
+.myWorks #websiteImg::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    top: 0;
+}
