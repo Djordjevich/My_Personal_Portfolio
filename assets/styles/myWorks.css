@@ -76,7 +76,7 @@
     width: max-content;
     text-decoration: none;
     color: var(--text-color);
-    background-color: #69181a;
+    background-color: var(--sec-heading-color);
     padding: 1rem 3rem;
     border-radius: 10px;
     transition: all 0.25s ease-in-out;

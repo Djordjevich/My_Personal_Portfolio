@@ -1,6 +1,6 @@
 :root{
     --heading-color: #fff;
-    --sec-heading-color: #d8090d;
+    --sec-heading-color: #9f2527;
     --text-sec-color:#aaa;
     --text-color: #fff;
     --bg-color: #1a1a1a;
@@ -13,4 +13,16 @@
 }
 body{
     background-color: var(--bg-color);
+}
+hr{
+    margin: 0 2rem;
+    border: none;
+    height: 2px;
+    background-color: #232323;
+}
+footer{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 2rem;
+    color: var(--text-sec-color);
+    text-align: center;
 }

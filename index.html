@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/styles/header.css">
     <link rel="stylesheet" href="./assets/styles/about.css">
     <link rel="stylesheet" href="./assets/styles/myWorks.css">
+    <link rel="stylesheet" href="./assets/styles/contact.css">
 </head>
 <body>
     <header>
@@ -73,51 +74,57 @@
         <section class="contact">
             <h2>Contact Me | <span>Contact Me</span></h2>           
             <div class="contact-content">
-                <p>If you have a project in mind or just want to say hello, don’t hesitate to get in touch. You can reach me via email, social media or through my profiles on LinkedIn and GitHub.</p>
                 <div class="social">
-                    <div class="social-element">
-                        <i class="ri-mail-fill"></i>
-                        <div class="social-element-content">
-                            <h3>E-mail</h3>
-                            <a href="mailto:acadjordjevic02@gmail.com">acadjordjevic02@gmail.com</a>
+                    <p>If you have a project in mind or just want to say hello, don’t hesitate to get in touch. You can reach me via email, social media or through my profiles on LinkedIn and GitHub.</p>
+                    <div class="social-grid">
+                        <div class="social-element">
+                            <i class="ri-mail-fill"></i>
+                            <div class="social-element-content">
+                                <h3>E-mail</h3>
+                                <a href="mailto:acadjordjevic02@gmail.com">acadjordjevic02@gmail.com</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="social-element">
-                        <i class="ri-linkedin-box-fill"></i>
-                        <div class="social-element-content">
-                            <h3>LinkedIn</h3>
-                            <a href="www.linkedin.com/in/a-djordjevich">Aleksandar Djordjevic</a>
+                        <div class="social-element">
+                            <i class="ri-linkedin-box-fill"></i>
+                            <div class="social-element-content">
+                                <h3>LinkedIn</h3>
+                                <a href="www.linkedin.com/in/a-djordjevich">Aleksandar Djordjevic</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="social-element">
-                        <i class="ri-instagram-fill"></i>
-                        <div class="social-element-content">
-                            <h3>Instagram</h3>
-                            <a href="https://www.instagram.com/a.djordjevich_/">@a.djordjevich_</a>
+                        <div class="social-element">
+                            <i class="ri-instagram-fill"></i>
+                            <div class="social-element-content">
+                                <h3>Instagram</h3>
+                                <a href="https://www.instagram.com/a.djordjevich_/">@a.djordjevich_</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="social-element">
-                        <i class="ri-github-fill"></i>
-                        <div class="social-element-content">
-                            <h3>Github</h3>
-                            <a href="https://github.com/Djordjevich">A__Djordjevich</a>
+                        <div class="social-element">
+                            <i class="ri-github-fill"></i>
+                            <div class="social-element-content">
+                                <h3>Github</h3>
+                                <a href="https://github.com/Djordjevich">A__Djordjevich</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <form action="https://formsubmit.co/your@email.com" method="POST">
-                    <label for="name">Name</label>
-                    <input id="name" type="text" name="name" placeholder="Enter your name..."required>
+                <form action="https://formsubmit.co/acadjordjevic02@gmail.com" method="POST" autocomplete="off">
+                    <label for="name">Your Name<span>*</span></label>
+                    <input id="name" type="text" name="name" required>
 
-                    <label for="email">E-mail</label>
+                    <label for="email">Email Address<span>*</span></label>
                     <input id="email" type="email" name="email" required>
 
-                    <label for="message">Message</label>
+                    <label for="message">Message<span>*</span></label>
                     <textarea name="message" id="message"></textarea>
 
                     <button type="submit">Send</button>
                 </form>
             </div>
         </section>
+        <hr>
+        <footer>
+            <p>Copyright &copy; 2026 Aleksandar Đorđević. All Rights Reserved.</p>
+        </footer>
     </main>
 </body>
 </html>
