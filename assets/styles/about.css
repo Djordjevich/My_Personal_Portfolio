@@ -3,7 +3,7 @@
     font-family: 'Ubuntu', sans-serif;
     padding: 2rem;
     position: relative;
-    background-color: var(--bg-color);
+    background: var(--bg-color);
     overflow: hidden;
 }
 .about h2{

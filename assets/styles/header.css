@@ -1,7 +1,21 @@
 header{
     height: 100dvh;
     position: relative;
-    background-color: var(--bg-color);
+    background: var(--bg-color);
+}
+header::before{
+    content: '';
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background-color: var(--sec-heading-color);
+    user-select: none;
+    filter: blur(100px);
+    border-radius: 50%;
+    opacity: 15%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 header nav{
     width: 100%;
@@ -35,6 +49,7 @@ header .header-content h1{
     font-weight: 800;
     letter-spacing: -2rem;
     user-select: none;
+    overflow-x:visible;
 }
 header .header-content p{
     color: var(--sec-heading-color);

@@ -3,7 +3,7 @@
     --sec-heading-color: #9f2527;
     --text-sec-color:#aaa;
     --text-color: #fff;
-    --bg-color: #1a1a1a;
+    --bg-color: linear-gradient(90deg, #1a1a1a 0%, #212121FF 100%);
 }
 *{
     margin: 0;
@@ -12,7 +12,7 @@
     outline: none;
 }
 body{
-    background-color: var(--bg-color);
+    background: var(--bg-color);
 }
 hr{
     margin: 0 2rem;
@@ -21,6 +21,7 @@ hr{
     background-color: #232323;
 }
 footer{
+    background: var(--bg-color);
     font-family: 'Ubuntu', sans-serif;
     padding: 2rem;
     color: var(--text-sec-color);
