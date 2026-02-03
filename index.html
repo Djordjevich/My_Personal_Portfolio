@@ -13,15 +13,18 @@
     <link rel="stylesheet" href="./assets/styles/about.css">
     <link rel="stylesheet" href="./assets/styles/myWorks.css">
     <link rel="stylesheet" href="./assets/styles/contact.css">
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
 </head>
 <body>
-    <header>
+    <header id="headerNav">
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">My Works</a></li>
-                <li><a href="#">Contact Me</a></li>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <ul class="menu">
+                <li><a href="#headerNav">Home</a></li>
+                <li><a href="#aboutNav">About Me</a></li>
+                <li><a href="#myWorksNav">My Works</a></li>
+                <li><a href="#contactNav">Contact Me</a></li>
             </ul>
         </nav>
         <div class="header-content">
@@ -31,7 +34,7 @@
         <blockquote><span>"</span>I don’t need to be the loudest person in the room to be the most confident — my decisions speak for me.<span>"</span></blockquote>
     </header>
     <main>
-        <section class="about">
+        <section class="about" id="aboutNav">
             <h2>About Me | <span>About Me</span></h2>
             <h3>Aleksandar Djordjevic</h3>
             <h4>UI/UX Designer & Web Developer</h4>
@@ -55,7 +58,7 @@
 
             <img src="assets/images/About/Me.png" alt="Me with my arms crossed">
         </section>
-        <section class="myWorks">
+        <section class="myWorks" id="myWorksNav">
             <h2>My Works | <span>My Works</span></h2>
             <h3>Websites</h3>
             <video autoplay loop poster="./assets/images/My Work/ApexSimRacing.png">
@@ -71,7 +74,7 @@
             <p>Complete website for ApexSimRacing Center, built with a fully responsive layout and a slightly adapted design for mobile devices to ensure a smooth user experience across all screen sizes. The website features a video hero section, fully functional anchor navigation to all key sections of the page, and external links to relevant websites. This project represents my first fully completed website, where I applied my knowledge of UI design and web development in a real, end-to-end project — from layout and structure to responsiveness and usability.</p>
             <a href="https://djordjevich.github.io/Apex_Sim_Racing_018/" target="_blank">Visit site</a>
         </section>
-        <section class="contact">
+        <section class="contact" id="contactNav">
             <h2>Contact Me | <span>Contact Me</span></h2>           
             <div class="contact-content">
                 <div class="social">
@@ -121,10 +124,23 @@
                 </form>
             </div>
         </section>
-        <hr>
-        <footer>
-            <p>Copyright &copy; 2026 Aleksandar Đorđević. All Rights Reserved.</p>
-        </footer>
+        
     </main>
+    <hr>
+    <footer>
+        <p>Copyright &copy; 2026 Aleksandar Đorđević. All Rights Reserved.</p>
+    </footer>
+    <script>
+  // Pronalazi sve linkove unutar menija i checkbox
+  const menuLinks = document.querySelectorAll('.menu li a');
+  const checkbox = document.getElementById('menu-toggle');
+
+  // Za svaki link dodaje komandu: "Kada te kliknu, odštikliraj checkbox"
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      checkbox.checked = false;
+    });
+  });
+</script>
 </body>
 </html>

@@ -19,22 +19,22 @@ header::before{
 }
 header nav{
     width: 100%;
-    right: 0;
-    padding: 2rem;
+    right: 0;   
 }
-header nav ul{
+header .menu{
     display: flex;
     float: right;
     gap: 4rem;
     list-style-type: none;
+    padding: 2rem;
 }
-header nav ul li a{
+header .menu li a{
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
     color: var(--text-sec-color);
     transition: all ease-in-out 0.25s;
 }
-header nav ul li a:hover{
+header .menu li a:hover{
     color: var(--text-color);
 }
 header .header-content h1{
@@ -69,10 +69,20 @@ header blockquote{
     color: var(--text-sec-color);
     font-family: 'Ubuntu', sans-serif;
     position: absolute;
-    bottom: 25%;
+    display: inline-block;
+    top: 80%;
     left: 50%;
     transform: translateX(-50%);
 }
 header blockquote span{
     color: var(--sec-heading-color);
+}
+#menu-toggle { 
+    display: none;
+}
+.hamburger { 
+    display: none; 
+    user-select: none;
+    width: max-content;
+    float: right;
 }
