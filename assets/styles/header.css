@@ -49,7 +49,6 @@ header .header-content h1{
     font-weight: 800;
     letter-spacing: -2rem;
     user-select: none;
-    overflow-x:visible;
 }
 header .header-content p{
     color: var(--sec-heading-color);
