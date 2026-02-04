@@ -38,6 +38,7 @@ header .menu li a:hover{
     color: var(--text-color);
 }
 header .header-content .responsive-heading{
+    font-family: 'Domine', sans-serif;
     display: none;
 }
 header .header-content .responsive-p{
