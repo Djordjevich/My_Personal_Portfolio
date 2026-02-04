@@ -6,8 +6,8 @@ header{
 header::before{
     content: '';
     position: absolute;
-    width: 700px;
-    height: 700px;
+    width: 50%;
+    height: 50%;
     background-color: var(--sec-heading-color);
     user-select: none;
     filter: blur(100px);
@@ -36,6 +36,12 @@ header .menu li a{
 }
 header .menu li a:hover{
     color: var(--text-color);
+}
+header .header-content .responsive-heading{
+    display: none;
+}
+header .header-content .responsive-p{
+    display: none;
 }
 header .header-content h1{
     color: var(--heading-color);
