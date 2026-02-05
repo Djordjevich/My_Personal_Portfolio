@@ -47,6 +47,8 @@
     margin: 3rem auto;
  }
  .myWorks ul .badge{
+    display: flex;
+    align-items: center;
     background-color: #333;
     padding: 0.5rem;
     border-radius: 10px;

@@ -120,18 +120,17 @@
     z-index: 1000;
   }
   header nav:has(#menu-toggle:checked){
-    background-color: rgba(26, 26, 26, 0.95);
-    backdrop-filter: blur(10px);
+    background-color: rgba(26, 26, 26, 1);
     z-index: 1000;
   }
   header .menu {
+    padding: 0 3rem;
     display: none;
     position: absolute;
     top: 100%;
     right: 0;
     width: 100%;
-    background-color: rgba(26, 26, 26, 0.95);
-    backdrop-filter: blur(10px);
+    background-color: rgba(26, 26, 26, 1);
     z-index: 1000;
   }
   header .menu li{
@@ -150,19 +149,20 @@
         display: none;
     }
     header .header-content .responsive-heading{
-        display: block;
+        display: inline-block;
+        font-size: 6rem;
+        letter-spacing: -0.5rem;
         padding: 0 3rem 3rem;
-    }
-    header .header-content .responsive-heading span{
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        line-height: 8rem;
     }
     header .header-content .responsive-p{
         display: block;
         position: static;
         transform: translate(0) skewY(0deg);
         padding: 5rem 3rem 0;
+    }
+}
+@media screen and (max-width: 430px){
+    header .header-content .responsive-heading{
+        font-size: 5rem;
     }
 }
